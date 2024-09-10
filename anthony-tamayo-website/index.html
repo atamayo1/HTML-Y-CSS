@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo de la web -->
+    <title>Anthony Code Web</title>
+    <!-- Esta es la importacion de nuestro archivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- https://boxicons.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- https://remixicon.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Esta sección es la cabecera de la pagina web la cual tendrá logo y barra de navegación -->
+    <header>
+        <!-- Logo -->
+        <a href="#" class="logo">ANTHONY CODE</a>
+
+        <!-- Truco para que el boton sea clickeable sin usar JavaScript -->
+        <input type="checkbox" name="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon-action">
+            <div class='bx bx-menu' id="menu-icon"></div>
+        </label>
+
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h5>Frontend Developer</h5>
+            <h4>ReactJS Tech Lead</h4>
+            <h1>Anthony Code</h1>
+            <p>
+                Frontend Developer with 6 years of experience, specializing in building scalable web applications using
+                React, TypeScript, and modern technologies like GraphQL and Redux. <br>
+                Focused on delivering innovative, maintainable solutions while integrating backend APIs in .NET Core.
+            </p>
+            <a href="#">CV</a>
+            <a href="#" class="videos"><i class='bx bx-play'></i>Watch my videos</a>
+        </div>
+        <div class="hero-img">
+            <img src="./assets/img/anthony-photo.png" alt="anthony code" />
+        </div>
+    </section>
+    <div class="icons">
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-youtube' ></i></a>
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+    </div>
+    <div class="scroll-down">
+        <a href="#"><i class='bx bxs-down-arrow'></i></a>
+    </div>
+</body>
+
+</html>
