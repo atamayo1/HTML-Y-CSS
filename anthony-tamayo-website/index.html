@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- titulo de la web -->
-    <title>Anthony Code Web</title>
-    <!-- Esta es la importacion de nuestro archivo CSS -->
+    <!-- Titulo de la web -->
+    <title>Anthony Tamayo Web</title>
+    <!-- Esta es la importación de nuestro archivo CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- https://boxicons.com/ -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -18,33 +18,34 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
-    <!-- Esta sección es la cabecera de la pagina web la cual tendrá logo y barra de navegación -->
+    <!-- Cabecera de la página -->
     <header>
         <!-- Logo -->
-        <a href="#" class="logo">ANTHONY CODE</a>
+        <a href="#" class="logo">ANTHONY TAMAYO WEB</a>
 
-        <!-- Truco para que el boton sea clickeable sin usar JavaScript -->
+        <!-- Truco para el menú sin JavaScript -->
         <input type="checkbox" name="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon-action">
             <div class='bx bx-menu' id="menu-icon"></div>
         </label>
 
         <ul class="navlist">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
+
+    <!-- Sección Hero -->
     <section class="hero">
         <div class="hero-text">
             <h5>Frontend Developer</h5>
             <h4>ReactJS Tech Lead</h4>
-            <h1>Anthony Code</h1>
+            <h1>Anthony Tamayo Web</h1>
             <p>
                 Frontend Developer with 6 years of experience, specializing in building scalable web applications using
                 React, TypeScript, and modern technologies like GraphQL and Redux. <br>
@@ -54,18 +55,49 @@
             <a href="#" class="videos"><i class='bx bx-play'></i>Watch my videos</a>
         </div>
         <div class="hero-img">
-            <img src="./assets/img/anthony-photo.png" alt="anthony code" />
+            <img src="./assets/img/anthony-photo.png" alt="Anthony Code" />
         </div>
     </section>
+
+    <!-- Sección de Servicios -->
+    <section class="services">
+        <h2>Mis Servicios</h2>
+        <div class="service-card">
+            <i class='bx bxs-code'></i>
+            <h3>Desarrollo Frontend</h3>
+            <p>Construyo aplicaciones web modernas, responsivas y escalables utilizando React, TypeScript y Redux.</p>
+        </div>
+        <div class="service-card">
+            <i class='bx bxs-data'></i>
+            <h3>Integración Backend</h3>
+            <p>Integro APIs backend en .NET Core para crear soluciones completas y optimizadas.</p>
+        </div>
+        <div class="service-card">
+            <i class='bx bxs-rocket'></i>
+            <h3>Consultoría</h3>
+            <p>Brindo asesoría para mejorar la arquitectura de tus proyectos web y optimizar el rendimiento.</p>
+        </div>
+    </section>
+
+    <!-- Íconos de Redes Sociales -->
     <div class="icons">
         <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bxl-youtube' ></i></a>
-        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
         <a href="#"><i class='bx bxl-github'></i></a>
     </div>
+
+    <!-- Scroll Down -->
     <div class="scroll-down">
         <a href="#"><i class='bx bxs-down-arrow'></i></a>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Anthony Code Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

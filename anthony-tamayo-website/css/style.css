@@ -1,3 +1,5 @@
+@import url('portfolio.css');
+@import url('contact.css');
 /*
     font-family: 'Inconsolata', monospace;
     font-family: 'Roboto Mono', monospace; 
@@ -7,15 +9,19 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Esto mantiene el ancho y el alto a pesar del padding y el border */
+    box-sizing: border-box;
+    /* Esto mantiene el ancho y el alto a pesar del padding y el border */
     font-family: 'Inconsolata', monospace;
-    list-style: none; /* Quitar puntos y decoracion de las listas */
-    text-decoration: none; /* Esto quita el subrayado de los enlaces */
+    list-style: none;
+    /* Quitar puntos y decoracion de las listas */
+    text-decoration: none;
+    /* Esto quita el subrayado de los enlaces */
     color: white;
 }
 
 body {
-    background-color: black; /* TODO: borrar esto cuando tengamos el fondo final */
+    background-color: black;
+    /* TODO: borrar esto cuando tengamos el fondo final */
 }
 
 header {
@@ -24,16 +30,20 @@ header {
     top: 0;
     z-index: 100;
     width: 100%;
-    display: flex; /*  Esto hará que los elementos se coloquen en linea */
-    align-items: center; /* Centra verticalmente */
-    justify-content: space-between; /* Que los elementos se separen  */
+    display: flex;
+    /*  Esto hará que los elementos se coloquen en linea */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: space-between;
+    /* Que los elementos se separen  */
     padding: 15px 3%;
     background-color: transparent;
 }
 
 .logo {
     font-size: 30px;
-    font-weight: 800; /* Esto es para manejar el grosor de las letras */
+    font-weight: 800;
+    /* Esto es para manejar el grosor de las letras */
 }
 
 .navlist {
@@ -44,18 +54,22 @@ header {
     margin-left: 4rem;
     font-size: 16px;
     font-weight: 600;
-    border-bottom: 2px solid transparent; /*  Este es un subrayado transparente */
-    transition: all .5s ease 0s; /* Esto es para animar todas las caracteristicas del navlist */
+    border-bottom: 2px solid transparent;
+    /*  Este es un subrayado transparente */
+    transition: all .5s ease 0s;
+    /* Esto es para animar todas las caracteristicas del navlist */
 }
 
 .navlist a:hover {
-    border-bottom: 2px solid white; /*  Este es un subrayado transparente */
+    border-bottom: 2px solid white;
+    /*  Este es un subrayado transparente */
 }
 
 #menu-icon {
     color: white;
     font-size: 35px;
-    z-index: 101; /* Para que este sobre el header */
+    z-index: 101;
+    /* Para que este sobre el header */
     cursor: pointer;
 }
 
@@ -71,12 +85,16 @@ header {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%); /* fondo de color gradiente */
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+    /* fondo de color gradiente */
     position: relative;
-    display: grid; /* Para que se pueda dividir en 2 columnas */
-    grid-template-columns: 1fr 1fr; /* las dos columnas */
+    display: grid;
+    /* Para que se pueda dividir en 2 columnas */
+    grid-template-columns: 1fr 1fr;
+    /* las dos columnas */
     align-items: center;
-    gap: 2rem; /* haya un especio de 2rem entre las dos columnas */
+    gap: 2rem;
+    /* haya un especio de 2rem entre las dos columnas */
 }
 
 section {
@@ -113,7 +131,8 @@ section {
     border: 10px solid #31494e;
     width: 400px;
     margin: 10% 0 0 10%;
-    transition:  all 5s linear; /* esto hace que la transicion sea lineal */
+    transition: all 5s linear;
+    /* esto hace que la transicion sea lineal */
 }
 
 .hero-img img:hover {
@@ -194,22 +213,28 @@ section {
         padding: 0 3%;
         transition: .2s;
     }
+
     .hero-text {
         padding-top: 0;
     }
+
     .hero-img {
         text-align: center;
     }
+
     .hero-img img {
         width: 80%;
         margin: 10% 0 0 10%;
     }
+
     .hero-text p {
         font-size: 70%;
     }
+
     .icons {
         display: none;
     }
+
     .scroll-down {
         display: none;
     }
@@ -220,36 +245,84 @@ section {
     .menu-icon-action {
         display: block;
     }
+
     .hero-text {
         text-align: center;
         padding-top: 100px;
     }
+
     .hero-img img {
         margin: 0;
     }
+
     .hero {
         height: 100%;
         gap: 1rem;
         grid-template-columns: 1fr;
     }
+
     .navlist {
-       position: absolute;
-       top: 100%;
-       right: -100%;
-       width: 200px;
-       height: 180px;
-       background-color: #02171fef;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       padding: 30px 20px;
-       transition: all .5s ease-out;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 180px;
+        background-color: #02171fef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .5s ease-out;
     }
+
     .navlist a {
         margin: 7px 0;
         display: block;
     }
-    #menu-toggle:checked + label.menu-icon-action + ul {
+
+    #menu-toggle:checked+label.menu-icon-action+ul {
         right: 0;
     }
+}
+
+/* Estilo para la nueva sección de Servicios */
+.services {
+    background-color: #222;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
 }
